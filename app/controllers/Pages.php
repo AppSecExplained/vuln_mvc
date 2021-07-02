@@ -5,10 +5,11 @@
         }
 
         public function index(){
-            
+            $data = ['title' => 'welcome'];
+            $this->view('pages/index', $data);
         }
 
         public function about(){
-            echo 'about text';
+            $this->view('pages/about');
         }
     }
